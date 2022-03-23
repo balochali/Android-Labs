@@ -10,15 +10,19 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
 
-    val random = Random()
-    var numtoGuess = random.nextInt(1000)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
     }
+    val random = Random()
+    var numtoGuess = random.nextInt(1000)
 
+    fun TryAgain(view : View){
+        numtoGuess = random.nextInt(1000)
+    }
     fun onGuess(view : View){
         var textview = findViewById<TextView>(R.id.textView2)
         var text = findViewById<EditText>(R.id.editTextNumber)
@@ -30,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             textview.text = "Your guess is to high"
         else
             textview.text = "Yes! You guessed it right :)"
-
 
 
 

@@ -58,6 +58,7 @@
         android:layout_height="56dp"
         android:backgroundTint="#FFEB3B"
         android:fontFamily="sans-serif-black"
+        android:onClick="onGuess"
         android:text="Guess"
         android:textColor="#000000"
         android:textSize="22sp"
@@ -66,5 +67,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
         app:layout_constraintVertical_bias="0.291" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="191dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="sans-serif-black"
+        android:onClick="TryAgain"
+        android:text="Try Again"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintVertical_bias="0.563" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
 
     fun TryAgain(view : View){
         numtoGuess = random.nextInt(1000)
+        var textview = findViewById<TextView>(R.id.textView2)
+        var text = findViewById<EditText>(R.id.editTextNumber)
+        textview.text = "Try Again"
+        text.text = null
     }
     fun onGuess(view : View){
         var textview = findViewById<TextView>(R.id.textView2)

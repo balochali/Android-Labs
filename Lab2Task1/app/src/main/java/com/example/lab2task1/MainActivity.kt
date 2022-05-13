@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d("called", "On Start")
+        println("calledOn Start")
     }
 
     override fun onResume() {

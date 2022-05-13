@@ -3,6 +3,8 @@ package com.example.classactivity
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -20,6 +22,13 @@ class MainActivity : AppCompatActivity() {
         val ChannelID : String = "Test"
         val ChannelName : String = "Android"
 
+
+        //0 - Creating a pending intent
+        val intent : Intent  = Intent(this, MainActivity::class.java)
+        val pendingIntent : PendingIntent = PendingIntent.getActivity(this, 0, intent, 0)
+
+
+
         //1 - Create Notification Manager's Object
         val manager : NotificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
 
@@ -28,6 +37,8 @@ class MainActivity : AppCompatActivity() {
             .setSmallIcon(R.drawable.iconnotification)
             .setContentTitle("TestNotification")
             .setContentText("This is just a test Notification")
+            .setAutoCancel(true)
+            .setContentIntent(pendingIntent)
 
         val notification : Notification = builder.build()
 
@@ -35,10 +46,12 @@ class MainActivity : AppCompatActivity() {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             val notificationChannel : NotificationChannel =
                 NotificationChannel(ChannelID, ChannelName,
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                    NotificationManager.IMPORTANCE_HIGH)
 
             manager.createNotificationChannel(notificationChannel)
         }
+
+        manager.notify(1234, notification)
 
     }
 }

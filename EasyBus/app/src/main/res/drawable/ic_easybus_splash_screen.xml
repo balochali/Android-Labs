@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="3048dp"
+    android:height="5334dp"
+    android:viewportWidth="3048"
+    android:viewportHeight="5334">
+    <path
+        android:fillColor="#fefeff"
+        android:name="Shape 1"
+        android:pathData="m-1214.9 1663 3096.3 -3377.1 53.5 51.2 -3096.3 3377.1 -53.5 -51.2z" />
+    <path
+        android:fillColor="#fefeff"
+        android:name="Shape 1 copy"
+        android:pathData="m1881.4 -1906.2 -3096.3 3377.1 53.5 51.2 3096.3 -3377.1 -53.5 -51.2z" />
+    <path
+        android:fillColor="#fefeff"
+        android:name="Shape 1 copy 2"
+        android:pathData="m1881.4 -1522.2 -3096.3 3377.1 53.5 51.2 3096.3 -3377.1 -53.5 -51.2z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Shape 2"
+        android:pathData="m168.5 4040.3v-25h2712v25h-2712z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Shape 2 copy 2"
+        android:pathData="m168.5 4184.3v-25h2712v25h-2712z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Shape 2 copy 4"
+        android:pathData="m168.5 5012.3v-25h2712v25h-2712z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Shape 2 copy"
+        android:pathData="m432.3 4107.5v-20.1h2184.3v20.1h-2184.3z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Shape 2 copy 3"
+        android:pathData="m432.3 4251.5v-20.1h2184.3v20.1h-2184.3z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Shape 2 copy 5"
+        android:pathData="m432.3 4935.5v-20.1h2184.3v20.1h-2184.3z" />
+</vector>
